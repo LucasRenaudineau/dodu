@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BigObstacleSpawner : MonoBehaviour {
     [SerializeField] private GameObject projectilePrefab;
-    [SerializeField] private float projectileSpeed = 10000;
+    [SerializeField] private float projectileSpeed = 1000;
     [SerializeField] private float projectileLifetime = 50;
     [SerializeField] private float spawnInterval = 4;
-	[SerializeField] private float initialDistance = 100;
+	[SerializeField] private float initialDistance = 1000;
     private float timer = 0f;
 
     void Start() {
