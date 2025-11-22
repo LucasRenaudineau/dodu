@@ -756,7 +756,7 @@ MonoBehaviour:
   force_amount: 6500
   k: 2.5
   dashIntensity: 1e+20
-  deltaDash: 2
+  deltaDash: 5
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
