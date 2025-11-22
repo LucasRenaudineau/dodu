@@ -43,7 +43,7 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     - _ZWrite: 0
-    - _borderRad: 0.2
+    - _borderRad: 0
     - _rad: 0.95
     - _smoothness: 0.005
     m_Colors:
