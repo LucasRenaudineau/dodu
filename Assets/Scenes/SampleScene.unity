@@ -807,8 +807,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6ccc6cbd9b3830e80744f74f30e4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  force_amount: 10
-  k: 0.3
+  force_amount: 6500
+  k: 2.5
+  dashIntensity: 1e+20
+  deltaDash: 2
+  dashDuration: 0.1
 --- !u!1 &1718087736
 GameObject:
   m_ObjectHideFlags: 0
