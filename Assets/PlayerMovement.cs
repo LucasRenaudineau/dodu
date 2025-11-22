@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 	private float keys_pressed = 0;
 	private int vertic = 0;
 	private int horiz = 0;
+	public float k=0.3f; // dry friction coefficient
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start() {
 		rb = GetComponent<Rigidbody2D>();
@@ -24,5 +25,6 @@ public class PlayerMovement : MonoBehaviour
 			horiz +=1;
 		}
 		rb.AddForce((new Vector2(horiz,vertic)).normalized*force_amount, ForceMode2D.Impulse);
+		rb.AddForce(-k*rb.linearVelocity);
 	}
 }
