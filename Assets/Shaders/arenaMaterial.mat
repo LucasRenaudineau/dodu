@@ -43,9 +43,9 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     - _ZWrite: 0
-    - _borderRad: 0.15
-    - _rad: 0.95
-    - _smoothness: 0.005
+    - _borderRad: 0.05
+    - _rad: 0.9850975
+    - _smoothness: 0.01
     m_Colors:
     - _BorderColor: {r: 1, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
