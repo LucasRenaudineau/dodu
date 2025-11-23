@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8573184993262351644}
   - component: {fileID: 5027312245271944976}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   - component: {fileID: 5639986121647020833}
   - component: {fileID: 1959506453661303947}
   - component: {fileID: 4073657057813469911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BigObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

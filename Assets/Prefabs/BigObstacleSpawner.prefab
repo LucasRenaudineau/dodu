@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BigObstacleSpawner
   projectilePrefab: {fileID: 8873069188017715486, guid: eb81bc3053fe6310eb0f8cd0076c30ac, type: 3}
-  projectileSpeed: 1000
+  projectileSpeed: 2000
   projectileLifetime: 50
-  spawnInterval: 4
+  spawnInterval: 6
   initialDistance: 3000
+  alea_zone: 800
