@@ -491,7 +491,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.001}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 500, y: 500, z: 500}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1384460934}
@@ -685,7 +685,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1000, y: 1000, z: 1000}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 820804046}
@@ -726,7 +726,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 190
+  m_Radius: 250
 --- !u!50 &1384460936
 Rigidbody2D:
   serializedVersion: 5
@@ -752,7 +752,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1384460937
 MonoBehaviour:
@@ -766,8 +766,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6ccc6cbd9b3830e80744f74f30e4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  force_amount: 10
-  k: 0.3
+  force_amount: 6500
+  k: 2.5
+  dashIntensity: 1e+20
+  deltaDash: 2
+  dashDuration: 0.1
 --- !u!1001 &1485643693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -778,11 +781,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 976740974100059620, guid: eb81bc3053fe6310eb0f8cd0076c30ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1596
+      value: 4174
       objectReference: {fileID: 0}
     - target: {fileID: 976740974100059620, guid: eb81bc3053fe6310eb0f8cd0076c30ac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -713
+      value: -2327
       objectReference: {fileID: 0}
     - target: {fileID: 976740974100059620, guid: eb81bc3053fe6310eb0f8cd0076c30ac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -815,6 +818,10 @@ PrefabInstance:
     - target: {fileID: 976740974100059620, guid: eb81bc3053fe6310eb0f8cd0076c30ac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5639986121647020833, guid: eb81bc3053fe6310eb0f8cd0076c30ac, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8873069188017715486, guid: eb81bc3053fe6310eb0f8cd0076c30ac, type: 3}
       propertyPath: m_Name

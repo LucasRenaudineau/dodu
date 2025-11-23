@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class BigObstacleSpawner : MonoBehaviour {
     [SerializeField] private GameObject projectilePrefab;
-    [SerializeField] private float projectileSpeed = 1000;
+    [SerializeField] private float projectileSpeed = 10000;
     [SerializeField] private float projectileLifetime = 50;
     [SerializeField] private float spawnInterval = 4;
-	[SerializeField] private float initialDistance = 1000;
+	[SerializeField] private float initialDistance = 3000;
     private float timer = 0f;
 
-    void Start() {
+    void Start()
+    {
+        SpawnProjectile();
     }
 
     void SpawnProjectile() {
+        // The objects spawn from a circle of radius `intialDistance` with a random angle and home on the center
         float random_orientation = Random.Range(0, 360);
         Quaternion rotation = Quaternion.Euler(0, 0, random_orientation);
         
@@ -23,7 +26,7 @@ public class BigObstacleSpawner : MonoBehaviour {
         
         GameObject projectile = Instantiate(projectilePrefab, spawnPosition, rotation);
         
-        Vector3 direction = (transform.position - spawnPosition).normalized;
+        Vector2 direction = (transform.position - spawnPosition).normalized;
         
         BigObstacleLife obstacleScript = projectile.GetComponent<BigObstacleLife>();
         if (obstacleScript != null) {
