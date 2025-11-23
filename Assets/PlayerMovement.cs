@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 	public float k=0.3f; // dry friction coefficient
 	public float dashIntensity=10.0f;
 	public float deltaDash=5.0f; // time between dashes
-	private float timeSinceLastDash=0f;
+	private float timeSinceLastDash=5f;
 	private bool dashAvailable=true;
 	public float dashDuration=0.5f;
 	private Vector2 direction = Vector2.zero;
