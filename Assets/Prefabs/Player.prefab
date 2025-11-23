@@ -200,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a6ccc6cbd9b3830e80744f74f30e4c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  force_amount: 6500
+  force_amount: 1500
   k: 2.5
   dashIntensity: 1e+20
   deltaDash: 2
