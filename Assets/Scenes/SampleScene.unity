@@ -519,6 +519,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 7243070329289538762, guid: b3284f2acc7ff5acb8941371b51b1be9, type: 3}
   startPosP1: {x: -5, y: 0}
   startPosP2: {x: 5, y: 0}
+  scaleFactor: 0.3
 --- !u!4 &688346376
 Transform:
   m_ObjectHideFlags: 0
