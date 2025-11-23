@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class SmallObstacleSpawner : MonoBehaviour {
 		[SerializeField] private GameObject projectilePrefab;
-		[SerializeField] private float projectileSpeed = 2000;
-		[SerializeField] private float projectileLifetime = 10;
-		[SerializeField] private float spawnInterval = 2;
-		[SerializeField] private float initialDistance = 3000;
-		[SerializeField] private float alea_zone = 800f;
+		[SerializeField] private float projectileSpeed = 10000f;
+		[SerializeField] private float projectileLifetime = 10f;
+		[SerializeField] private float spawnInterval = 2f;
+		[SerializeField] private float initialDistance = 3000f;
+		[SerializeField] private float alea_zone = 1400f;
 		private float timer = 0f;
 		void Start()
 		{
