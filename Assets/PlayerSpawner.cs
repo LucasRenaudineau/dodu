@@ -5,7 +5,7 @@ public class PlayerSpawner : MonoBehaviour
 	public GameObject playerPrefab;
 	public Vector2 startPosP1 = new Vector2(-25, 0);
 	public Vector2 startPosP2 = new Vector2(25, 0);
-	public float scaleFactor = 0.1f;
+	public float scaleFactor = 1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 	 void Start()
    	 {
