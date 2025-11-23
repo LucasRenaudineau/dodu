@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BigObstacleLife : MonoBehaviour {
+public class BigObstacle: MonoBehaviour {
 		private Rigidbody2D rb;
 		private float lifetime;
 		public void Initialize(Vector3 direction, float speed, float lifetime) {

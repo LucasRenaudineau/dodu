@@ -101,8 +101,9 @@ GameObject:
   - component: {fileID: 976740974100059620}
   - component: {fileID: 5639986121647020833}
   - component: {fileID: 1959506453661303947}
+  - component: {fileID: 4073657057813469911}
   m_Layer: 0
-  m_Name: Big Obstacle
+  m_Name: BigObstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -197,3 +198,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 490, y: 490}
   m_EdgeRadius: 0
+--- !u!114 &4073657057813469911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8873069188017715486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9df538331b7dd86882ee377c3fbf7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BigObstacle
