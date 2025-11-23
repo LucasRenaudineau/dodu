@@ -8,6 +8,7 @@ public class BigObstacleSpawner : MonoBehaviour {
 		[SerializeField] private float projectileLifetime = 30;
 		[SerializeField] private float spawnInterval = 4;
 		[SerializeField] private float initialDistance = 3000;
+		[SerializeField] private float alea_zone = 800;
 		private float timer = 0f;
 		void Start()
 		{
@@ -19,8 +20,8 @@ public class BigObstacleSpawner : MonoBehaviour {
         float random_orientation = Random.Range(0, 360);
         Quaternion rotation = Quaternion.Euler(0, 0, random_orientation);
         
-        float x = - Mathf.Cos(random_orientation * Mathf.Deg2Rad) * initialDistance + Random.Range(-1200,1200);
-        float y = - Mathf.Sin(random_orientation * Mathf.Deg2Rad) * initialDistance + Random.Range(-1200,1200);
+        float x = - Mathf.Cos(random_orientation * Mathf.Deg2Rad) * initialDistance + Random.Range(-alea_zone,alea_zone);
+        float y = - Mathf.Sin(random_orientation * Mathf.Deg2Rad) * initialDistance + Random.Range(-alea_zone,alea_zone);
         Vector3 spawnPosition = new Vector3(x, y, 0) + transform.position;
         
         GameObject projectile = Instantiate(projectilePrefab, spawnPosition, rotation);
